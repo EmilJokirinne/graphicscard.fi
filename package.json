@@ -1,0 +1,25 @@
+{
+  "name": "graphicscard-fi",
+  "private": true,
+  "version": "1.0.0",
+  "description": "graphicscard.fi – suomalainen näytönohjainten tietosivusto ja hintaseuranta",
+  "type": "module",
+  "scripts": {
+    "dev": "node build.mjs --dev",
+    "build": "node build.mjs",
+    "preview": "node serve.mjs dist 4173",
+    "typecheck": "tsc --noEmit",
+    "data:demo": "node --experimental-strip-types generate-demo-data.ts"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "esbuild": "^0.27.0",
+    "typescript": "^5.9.0"
+  }
+}
